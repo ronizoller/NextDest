@@ -1,0 +1,62 @@
+.row {
+    display: flex;
+  }
+  .column {
+    flex: 20%;
+    padding: 5px;
+  }
+  .myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e6e6e6 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#7a7a7a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1abc9c 5%, #00802b 100%);
+    background-color:#1abc9c;
+    color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.header {
+	padding: 0.2px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 20px;
+}
+
+#loading {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(192, 192, 192, 0.5);
+	background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+
+#page{
+	display: none;
+}
+.error {
+	border:2px solid red;
+  }
+        

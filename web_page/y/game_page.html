@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB_bVV2u2s1arhhb58SpD410hMGK7_jpT8",
+        authDomain: "nextdest-6572e.firebaseapp.com",
+        databaseURL: "https://nextdest-6572e.firebaseio.com",
+        projectId: "nextdest-6572e",
+        storageBucket: "nextdest-6572e.appspot.com",
+        messagingSenderId: "79925777249",
+        appId: "1:79925777249:web:98a4bcac6c21a6ffb92b20",
+        measurementId: "G-V6C6HTQDYW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="similar_countries_DF.js" ></script>
+    <script src="game_page.mjs"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body style="background-color:#f2f2f2;" onload="onLoadFunc()">
+<link rel="stylesheet" type="text/css" href="styls.css">
+
+<div class="header">
+    <h2>NextDest</h2>
+</div>
+<div id=page>
+    <div align="center">
+        <p id=question_text> text</p>
+        <img id=main_img>
+        <figcaption style="font-size:10px" id=main_img_cap> Your text </figcaption>
+        <br>
+        <br>
+        <p id=question_text> Choose from the options below:</p>
+    </div>
+    <div style="width:device-width; margin:0 auto;" class="row">
+        <div class="column">
+            <input type="image" id=img0>
+            <figcaption style="font-size:10px" id=img0_cap> Your text </figcaption>
+        </div>
+        <div class="column">
+            <input type="image" id=img1>
+            <figcaption style="font-size:10px" id=img1_cap> Your text </figcaption>
+        </div>
+        <div class="column">
+            <input type="image" id=img2>
+            <figcaption style="font-size:10px" id=img2_cap> Your text </figcaption>
+        </div>
+        <div class="column">
+            <input type="image" id=img3>
+            <figcaption style="font-size:10px" id=img3_cap> Your text </figcaption>
+        </div>
+        <div class="column">
+            <input type="image" id=img4>
+            <figcaption style="font-size:10px" id=img4_cap> Your text </figcaption>
+        </div>
+    </div>
+    <div align="center"">
+        <br>
+        <button class="myButton" id=try_another>I don't know</button>
+    </div>
+</div>
+<div id="loading"></div>
+
+</body>
+</html>
