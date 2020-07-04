@@ -1,2 +1,2 @@
 # NextDest
- Intelagente travel planner
+ Intellagente travel planner
